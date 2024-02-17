@@ -1,10 +1,8 @@
 Задание №1.
 
 SELECT c.login, 
-       COUNT (o."courierId")
+       COUNT (*)
 FROM "Couriers" AS c 
 JOIN "Orders" AS o ON c.id = o."courierId"
 WHERE о."inDelivery" = true
 GROUP BY c.login;
-
-Данные выводятся задвоенные.
