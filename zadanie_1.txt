@@ -1,7 +1,7 @@
 Задание №1.
 
 SELECT c.login, 
-       COUNT (*)
+       COUNT (o."courierId")
 FROM "Couriers" AS c 
 JOIN "Orders" AS o ON c.id = o."courierId"
 WHERE о."inDelivery" = true
